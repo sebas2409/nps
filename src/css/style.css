@@ -262,6 +262,101 @@ a:hover {
   height: 24px;
 }
 
+/* Main content */
+
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.intro h1 {
+  font-family: var(--bs-font-serif);
+  font-weight: 400;
+  font-size: 2rem;
+  margin: 0.5em 0;
+}
+
+.intro p {
+  line-height: 1.4;
+}
+
+.info {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+/* Media card */
+
+.media-card a:link,
+.media-card a:visited {
+  color: var(--bs-black);
+  text-decoration: none;
+}
+.media-card a:hover .media-card__title {
+  text-decoration: underline;
+}
+
+.media-card__img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+}
+
+.media-card__title {
+  font-size: 1.2rem;
+  margin: 0.8em 0 0.5em;
+}
+
+.media-card p {
+  font-size: 0.8rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Park footer */
+
+#park-footer {
+  background-color: var(--bs-pampas);
+  background-image: url("/images/topo_pattern.png");
+  padding: 1.5rem 1rem;
+  font-size: 0.8rem;
+}
+
+.contact {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.contact h3 {
+  font-family: var(--bs-font-serif);
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  margin: 0 0 1em;
+}
+
+.contact h4 {
+  margin: 1em 0 0.2em;
+}
+
+.contact p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+@media screen and (min-width: 700px) {
+  .intro h1 {
+    font-size: 2.2rem;
+  }
+  .info {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+}
+
 /* Utility styles */
 
 .visually-hidden {
