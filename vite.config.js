@@ -6,6 +6,8 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 
 export default defineConfig({
   root: "src/",
+  // .env lives in the project root, not in src/
+  envDir: "../",
 
   build: {
     outDir: "../dist",

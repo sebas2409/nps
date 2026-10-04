@@ -1,0 +1,35 @@
+/* Main content */
+
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.intro h1 {
+  font-family: var(--bs-font-serif);
+  font-weight: 400;
+  font-size: 2rem;
+  margin: 0.5em 0;
+}
+
+.intro p {
+  line-height: 1.4;
+}
+
+.info {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+@media screen and (min-width: 700px) {
+  .intro h1 {
+    font-size: 2.2rem;
+  }
+  .info {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+}

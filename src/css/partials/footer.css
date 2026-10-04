@@ -1,0 +1,29 @@
+/* Park footer */
+
+#park-footer {
+  background-color: var(--bs-pampas);
+  background-image: url("/images/topo_pattern.png");
+  padding: 1.5rem 1rem;
+  font-size: 0.8rem;
+}
+
+.contact {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.contact h3 {
+  font-family: var(--bs-font-serif);
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  margin: 0 0 1em;
+}
+
+.contact h4 {
+  margin: 1em 0 0.2em;
+}
+
+.contact p {
+  margin: 0;
+  line-height: 1.5;
+}
