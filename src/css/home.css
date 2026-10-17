@@ -1,11 +1,5 @@
 /* Main content */
 
-main {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 1rem;
-}
-
 .intro h1 {
   font-family: var(--bs-font-serif);
   font-weight: 400;

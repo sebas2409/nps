@@ -55,3 +55,13 @@ export function getInfoLinks(data) {
   });
   return withUpdatedImages;
 }
+
+export async function getParkAlerts(code) {
+  const alertsData = await getJson(`alerts?parkCode=${code}`);
+  return alertsData.data;
+}
+
+export async function getVisitorCenterData(code) {
+  const visitorCenterData = await getJson(`visitorcenters?parkCode=${code}`);
+  return visitorCenterData.data;
+}
